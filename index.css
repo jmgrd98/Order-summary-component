@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+:root{
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%);
+    --veryPaleBlue: hsl(225, 100%, 98%);
+    --desaturatedBlue: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 300px;
+    background-color: var(--paleBlue);
+}
+
+#card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+#descricao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#descricao img{
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+}
+
+#descricao p{
+    font-weight: 600;
+    text-align: center;
+    width: 80%;
+    font-size: 1.5rem;
+    color: var(--desaturatedBlue)
+}
+
+#plano{
+    background-color: var(--veryPaleBlue);
+    padding: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    width: 80%;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+#plano a{
+    font-size: 1.2rem;
+    color: var(--brightBlue);
+    font-weight: bold;
+}
+
+#plano a:hover{
+    text-decoration: none;
+    color: var(--darkBlue);
+}
+
+#plano p{
+    font-size: 1.2rem;
+    color: var(--desaturatedBlue)
+}
+
+#pagamento{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction:  column;
+    gap: 50px;
+}
+
+button{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+button:first-of-type{
+    padding: 20px;
+    background-color: var(--brightBlue);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    width: 500px;
+}
+
+button:first-of-type:hover{
+    opacity: 0.7;
+}
+
+button:last-of-type{
+    background: none;
+    border: none;
+    color: var(--desaturatedBlue)
+}
+
+button:last-of-type:hover{
+    color: var(--darkBlue);
+}
